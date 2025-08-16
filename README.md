@@ -39,3 +39,7 @@ pip install pandas matplotlib
 ## Customize
 
 Edit the `data` dictionary in the script to change category keywords.
+
+---
+
+**Built by Ruthvik Kanukuntla**
