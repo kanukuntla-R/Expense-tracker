@@ -22,13 +22,38 @@ df['Description'] = df['Description'].str.replace(r'[*\-#]', ' ', regex=True)
 
 
 data = {
-  'stay': ['hilton', 'holiday inn', 'airbnb', 'motel', 'inn', 'suite'],
-  'travel': ['uber', 'lyft', 'metro', 'valley metro', 'southwest', 'delta', 'airlines', 'trip'],
-  'food': ['chipotle', 'starbucks', 'mcdonald', 'chick fil a', 'restaurant', 'catering', 'food', 'domino'],
-  'shopping': ['walmart', 'amazon', 'target', 'costco', 'temu', 'best buy', 'store'],
-  'bills': ['verizon', 'srp', 'aps', 'xfinity', 't mobile', 'at&t', 'utility', 'bill', 'payment'],
-  'transfers': ['zelle', 'quickpay', 'venmo', 'paypal', 'cash app']
+    'stay': [
+        'hilton', 'holiday inn', 'airbnb', 'motel', 'inn', 'suite', 'marriott', 
+        'hyatt', 'hotel', 'resort'
+    ],
+    'travel': [
+        'uber', 'lyft', 'metro', 'valley metro', 'bus', 'amtrak', 'southwest', 
+        'delta', 'american airlines', 'united', 'airlines', 'trip', 'airport', 'turo'
+    ],
+    'food': [
+        'chipotle', 'starbucks', 'mcdonald', 'chick fil a', 'restaurant', 
+        'catering', 'food', 'domino', 'pizza', 'cafe', 'burger', 'kfc', 'subway', 
+        'panda express', 'panera', 'popeyes', 'baskin', 'dunkin'
+    ],
+    'shopping': [
+        'walmart', 'amazon', 'target', 'costco', 'temu', 'best buy', 'store', 
+        'kohl', 'h&m', 'zara', 'ikea', 'dollar tree', 'five below', 'foot locker'
+    ],
+    'bills': [
+        'verizon', 'srp', 'aps', 'xfinity', 't mobile', 'at&t', 'att', 'utility', 
+        'utilities', 'electric', 'internet', 'wifi', 'water', 'gas', 'bill', 
+        'payment', 'tmobile', 'comcast'
+    ],
+    'transfers': [
+        'zelle', 'quickpay', 'venmo', 'paypal', 'cash app', 'square', 'remitly', 
+        'google pay', 'apple pay', 'transfer', 'splitwise'
+    ],
+    'others': [
+        'deposit', 'fee', 'service', 'charge', 'misc', 'unknown', 'adjustment', 
+        'correction'
+    ]
 }
+
 
 category_results = []
 
